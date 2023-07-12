@@ -1,0 +1,30 @@
+.container{
+    border: 0px;
+    margin: 100px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.viewport{
+    padding: 10px;
+    text-decoration: none;
+    border: 0px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    text-align: left;
+    width: 200px;
+    border-left: 10px rgb(246, 237, 246) solid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:400;
+}
+
+li{
+    list-style: none;  
+}
+.viewport:active{
+    border-left: 10px rgb(158, 63, 158) solid;
+}
+.viewport:hover{
+    border-left: 10px rgb(158, 63, 158) solid;
+}

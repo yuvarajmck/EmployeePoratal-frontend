@@ -1,0 +1,142 @@
+.container{    
+    align-items: center;
+    text-align: center;
+    border: 0px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    height: fit-content;  
+}
+/* access denied */
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+.flex-row{
+    width: 100px;
+}
+
+.flex{
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+section{
+    margin-left: 120px;
+    margin-top: 100px;
+}
+
+img{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.name{
+    color: blue;
+    font-family: monospace;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 5px;
+    font-size: larger;
+}
+
+.dept{
+    color: rgb(41, 41, 47);
+    font-weight: lighter;
+    font-style: normal;
+    font-family: monospace;
+    margin: 5px;
+    font-size: large;
+}
+
+.container:hover{
+    box-shadow: 0 3px 50px rgb(0 0 0 / 0.2);
+}
+
+
+.my-page-header {
+    grid-area: nav-header;
+    padding: 10px;
+    border: 0px;
+    background-attachment: fixed;
+    background-color: beige;
+}
+
+.my-page-body {
+    grid-area: main-body;
+    padding: 10px;
+}
+
+.my-page-sidebar {
+    grid-area: nav-side;
+    position: fixed;
+    background-color:rgb(234, 237, 250);
+    padding: 5px;
+    width: fit-content;
+    text-align: center;
+    height:700px;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+    border-start-end-radius: 30px; 
+    border-start-start-radius: 30px; 
+    border: 0px;
+    color: #439a86;
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover{
+    color: #439a86;
+}
+.my-page-footer {
+    grid-area: footer;
+    padding: 10px;
+}
+
+.my-page {
+    display: grid;
+    grid-template-areas:
+      "nav-header  nav-header  nav-header  nav-header"
+      "nav-side   main-body   main-body  main-body"
+      "nav-side     footer      footer      footer";
+}
+.menu {
+    padding: 10px;
+    padding-left: 20px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 50px;
+  }
+  
+  .icon-text {
+    color: rgb(34, 47, 165);
+    margin-top: 0px;
+    margin-bottom: 40px;
+    font-size: 11px;
+  }
+  .icon-text:hover{
+    color: #439a86;
+  }
+  
+  .icon {
+    width: 30px;
+    margin: 5px;
+  }
+  .designation{
+    margin: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(146, 128, 128);
+  }
+
+  .logo{
+    margin-bottom: 20px;
+  }

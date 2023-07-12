@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+<body>
+    <section>
+        <img src="{{employee.photoUrl}}" alt="profile pic">
+        <p>{{employee.name}} ({{employee.name}})</p>
+        <p>{{employee.designation}}</p>
+        <p>{{employee.id}}</p> 
+    </section>
+    <section> 
+           <ul>
+            <li><button class="viewport job">Job</button></li>
+            <li><button class="viewport">Personal</button></li>
+            <li><button class="viewport">Employement & Education</button> </li>
+           </ul>  
+           <section>
+            <table>
+                <tr>
+                    <td>{{employee.email}}</td>
+                    <td>
+                        {{employee.department.name}}
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    {{employee.mobilNo}}
+                </td>
+                <td>
+                    {{employee.address}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{employee.department.name}}
+                </td>
+                <td>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Direct Manager<br>
+                    {{employee.managers.managerName}}
+                </td>
+            </tr>
+            </table>
+           </section>   
+    </section>
+</body>
+</html>

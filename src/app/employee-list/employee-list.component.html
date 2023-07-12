@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee-List</title>
+</head>
+<body>
+    
+    <div class="my-page">
+        <header class="my-page-header"></header>
+        <div class="my-page-sidebar">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="grey" width="24" height="24" style="margin-top: 20px;">
+                    <path d="M12 2L1 11h3v9h6v-6h4v6h6v-9h3zm0 2h8v9h-4v6h-4v-6h-4v6H4v-9h8z"/>
+                </svg>
+              <p class="icon-text">Home</p>
+            </a>
+            <a href="https://www.youtube.com/shorts/rZxBIugYuGM">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="grey" width="24" height="24">
+                  <path d="M12 2L1 11h3v9h6v-6h4v6h6v-9h3zm0 2h8v9h-4v6h-4v-6h-4v6H4v-9h8z"/>
+              </svg>
+            <p class="icon-text">Shorts</p>
+          </a>
+    
+            <a href="https://www.youtube.com/feed/subscriptions">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="grey" width="24" height="24" class="icon">
+                    <path d="M12 2C6.48 2 2 6.48 2 12v9h20v-9c0-5.52-4.48-10-10-10zm0 16c-2.21 0-4-1.79-4-4h8c0 2.21-1.79 4-4 4zm0-7c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm8-6h-2V7h2v2zm0 4h-2v-2h2v2zm0 4h-2v-2h2v2z"/>
+                  </svg>
+                  
+              <p class="icon-text">Employees</p>
+            </a>
+    
+            <a href="https://www.youtube.com/shorts/rZxBIugYuGM">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="grey" width="24" height="24">
+                  <path d="M12 2L1 11h3v9h6v-6h4v6h6v-9h3zm0 2h8v9h-4v6h-4v-6h-4v6H4v-9h8z"/>
+              </svg>
+            <p class="icon-text">Shorts</p>
+          </a>
+    
+          <a href="https://www.youtube.com/shorts/rZxBIugYuGM">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="grey" width="24" height="24">
+                <path d="M12 2L1 11h3v9h6v-6h4v6h6v-9h3zm0 2h8v9h-4v6h-4v-6h-4v6H4v-9h8z"/>
+            </svg>
+          <p class="icon-text">Shorts</p>
+        </a>
+          </div>
+        <div class="my-page-body">
+            <section class="flex ">
+                <div class="container" *ngFor="let employee of employees" >
+                  <a (click)="viewEmployee(employee.id)">
+                    <img src="{{employee.photoUrl}}" alt="A nice picture">
+                    <h3 class="name">{{employee.name}}</h3>
+                    <p class="desination">{{employee.designation}}</p> 
+                    <h3 class="dept">{{employee.department.name}}</h3>
+                  </a>
+                    
+                    
+                </div>
+            </section>
+        </div>
+        <footer class="my-page-footer">the footer</footer>
+      </div>
+</body>
+</html>
